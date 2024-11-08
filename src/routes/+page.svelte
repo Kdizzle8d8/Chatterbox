@@ -1,4 +1,6 @@
 <script lang="ts">
+  import Button from "$lib/components/ui/button/button.svelte";
+
   let inputValue = $state();
 </script>
 
@@ -7,11 +9,11 @@
     placeholder="Input text here"
     contenteditable="true"
     bind:textContent={inputValue}
-    class="w-[60%] whitespace-pre focus-within:shadow-lg focus-within:scale-x-105 ring-transparent outline-2 ring-4 transition-all text-white resize-none outline-none text-sm p-4 bg-opacity-90 backdrop-blur-lg bg-slate-700 text-start rounded-lg"
+    class="w-[60%] whitespace-pre hover:bg-gray-600 focus-within:shadow-lg focus-within:scale-x-105 ring-transparent outline-2 ring-4 transition-all text-white resize-none outline-none text-sm p-4 bg-opacity-90 backdrop-blur-lg bg-slate-700 text-start rounded-lg"
   ></div>
   <button
     aria-label="send"
-    class="rounded-full p-3 hover:bg-slate-700 transition-colors hover:shadow-lg ml-8 bg-opacity-90 backdrop-blur-lg bg-slate-700"
+    class="rounded-full p-3 hover:bg-gray-600 transition-colors active:scale-95 active:bg-slate-600 hover:shadow-lg ml-10 bg-opacity-90 backdrop-blur-lg bg-slate-700"
     ><svg
       xmlns="http://www.w3.org/2000/svg"
       width="24"

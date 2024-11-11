@@ -20,7 +20,6 @@
 	} = $props<{
 		citations?: Citation[];
 		searchSteps?: SearchStep[];
-		children: () => any;
 	}>();
 </script>
 

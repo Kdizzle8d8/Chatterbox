@@ -39,29 +39,6 @@
 		</AIMessage>
 	</div>
 </div>
-<Button
-	class="mb-4"
-	onclick={async () => {
-		const response = await fetch('/chat', {
-			method: 'POST',
-			headers: {
-				'Content-Type': 'application/json'
-			},
-			body: JSON.stringify({
-				messages: [
-					{
-						role: 'user',
-						content: 'Hello! This is a test message.'
-					}
-				]
-			})
-		});
-		const data = await response.json();
-		console.log('API Response:', data);
-	}}
->
-	Test API Call
-</Button>
 
 <form
 	class="absolute bottom-4 left-1/2 w-[70%] -translate-x-1/2 overflow-hidden rounded-lg border bg-background focus-within:ring-1 focus-within:ring-ring"
